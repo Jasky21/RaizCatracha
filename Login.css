@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    text-align: right;
+}
+
+nav a {
+    padding-right: 20px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fdfefe;
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+}
+
+.box {
+    position: relative;
+    width: 22.5em;
+    height: 32.5em;
+    background: #a2d9ce;
+    border-radius: 50px 5px;
+    overflow: hidden;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 22.5em;
+    height: 32.5em;
+    background: linear-gradient(60deg, transparent, #000, #000);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 22.5em;
+    height: 32.5em;
+    background: linear-gradient(60deg, transparent, #000, #000);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+form {
+    position: absolute;
+    padding: 1.5em 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    inset: 3px;
+    border-radius: 50px 5px;
+    background: #a2d9ce;
+    z-index: 10;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #000;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.inputbox {
+    position: relative;
+    margin: 1.5em;
+    width: 15.5em;
+    border-bottom: 2px solid #000;
+}
+
+.inputbox label {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0.25em;
+    transform: translateY(-50%);
+    color: #000;
+    font-weight: 300;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputbox input {
+    font-size: 16px;
+    width: 100%;
+    height: 3.125em;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    padding: 0 2.1875em 0 0.3125em;
+    color: #000;
+}
+
+.inputbox ion-icon {
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    right: 8px;
+    color: #000;
+}
+
+.submit input {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 3.75em;
+    margin-bottom: 1em;
+    width: 9.5em;
+    height: 1.75em;
+    border-radius: 2.5em 0.25em;
+    border: 2px solid #000;
+    color: #000;
+    background-color: #a2d9ce;
+}
+
+.alerts {
+    margin-top: -1em;
+    width: 100%;
+    margin-left: 3.5em;
+}
+
+.alerts p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #d9138a;
+    text-align: left;
+}
+
+.link1 {
+    width: 100%;
+    margin-top: -0.75em;
+    margin-left: 3.5em;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+.submit input:hover {
+    color: #a2d9ce;
+    cursor: pointer;
+    background: #000;
+    transition: .2s;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -10px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.inputbox i {
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: 8px;
+    color: #000;
+}
+
+.box-su h2 {
+    margin-bottom: 1em;
+}
+
+.box-su {
+    position: relative;
+    width: 27em;
+    height: 47em;
+    background: #000;
+    border-radius: 50px 5px;
+    overflow: hidden;
+}
+
+.box-su::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 27em;
+    height: 45em;
+    background: linear-gradient(60deg, transparent, #000, #000);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.box-su::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 27em;
+    height: 45em;
+    background: linear-gradient(60deg, transparent, #000, #000);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.box-su .alerts {
+    margin-top: -1em;
+    width: 100%;
+    margin-left: 8.5em;
+}

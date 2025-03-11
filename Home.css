@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Quicksand, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    margin-top: 5.25em;
+    margin-bottom: 0.25em;
+    padding-top: 1em;
+    padding-left: 5em;
+    flex-grow: 1;
+    padding-bottom: 0em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #a2d9ce;
+    color: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(52, 73, 94, 0.2);
+    z-index: 2;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 22px;
+    margin-right: 5px;
+    color: #000;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo a h1 {
+    font-size: 22px;
+    margin-right: 5px;
+    color: #000;
+}
+
+.logo a img {
+    height: 60px;
+    width: auto;
+}
+
+.icons-header {
+    height: 30px;
+    width: 30px;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-buscar {
+    margin-right: 20px;
+}
+
+input {
+    font: inherit;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+form>div {
+    display: flex;
+    padding: 5px;
+    border-radius: 30px;
+    border: 2px solid #000;
+}
+
+form input {
+    border: none;
+    color: #000;
+    background: #a2d9ce;
+    padding-left: 20px;
+    background-image: url(icons8-búsqueda-128.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    width: 0;
+    transition: all 1s;
+}
+
+form input:focus {
+    outline: none;
+    width: 150px;
+}
+
+.hamburguesa-menu {
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.menu-lateral.abierto {
+    left: 0;
+}
+
+.hamburguesa-icon {
+    font-size: 24px;
+}
+
+.nav-header {
+    margin-right: 20px;
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 160px;
+    height: 100%;
+    background-color: #a2d9ce;
+    color: #000;
+    transition: left 0.3s ease;
+    z-index: 1;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 0 5px rgba(52, 73, 94, 0.2);
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+.menu-lateral .categoria {
+    cursor: pointer;
+    padding-top: 1em;
+}
+
+.categoria a {
+    font-weight: 500;
+}
+
+.menu-lateral .subcategorias {
+    display: none;
+}
+
+.menu-lateral .categoria:hover .subcategorias {
+    display: block;
+}
+
+.enlaces-footer a {
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+}
+
+.categoria a {
+    text-decoration: none;
+    color: #000;
+}
+
+.categoria a:hover {
+    text-decoration: underline;
+}
+
+.enlaces-footer a:hover {
+    background: #000;
+    color: #ebf5fb;
+    transition: .2s ease;
+}
+
+.hamburguesa-menu:hover~.menu-lateral {
+    left: 0;
+}
+
+.hamburguesa-menu:hover .hamburguesa-icon {
+    color: #000;
+}
+
+
+body {
+    margin-top: 10px;
+    background-color: #fdfefe;
+    color: #000;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.cartas {
+    color: #000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 1em;
+    width: 100%;
+    max-width: 20em;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.cartas img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.cartas:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .cartas {
+        width: calc(100% - 1em);
+    }
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0.5em 0;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer hr {
+    width: 50%;
+    margin: 20px auto;
+    border: solid 1px #a2d9ce;
+
+}

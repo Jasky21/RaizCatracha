@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+    <link rel="stylesheet" href="Pago.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="Carrito.html"><img class="icons-header" src="Back.png" alt="Back"></a>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo-img" src="Logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="nav-header">
+            <div>
+                <a href="Login.html"><img class="icons-header" src="User.png" alt="User"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <div class="resumen-pedido">
+                <h2>Resumen del Pedido</h2>
+                <p>Cantidad de artículos: 3</p>
+                <p>Subtotal: $45.00</p>
+                <p>Impuestos: $5.00</p>
+                <p>Envío: $3.00</p>
+                <p>Descuento: -$5.00</p>
+                <hr>
+                <p><strong>Total a Pagar: $48.00</strong></p>
+            </div>
+
+            <form class="input-group" method="get">
+                <h2>Dirección de envío</h2>
+
+                <div class="input-field-2">
+                    <div class="input-de-2">
+                        <h3>Nombre</h3>
+                        <input type="text">
+                    </div>
+                    <div class="input-de-2">
+                        <h3>Apellido</h3>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="input-field-3">
+                    <div class="input-de-3">
+                        <h3>Colonia</h3>
+                        <input type="text">
+                    </div>
+                    <div class="input-de-3">
+                        <h3>Calle</h3>
+                        <input type="text">
+                    </div>
+                    <div class="input-de-3">
+                        <h3>Casa</h3>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <h2>Información de pago</h2>
+
+                <select id="payment-method" name="payment-method" required>
+                    <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                    <option value="transferencia">Transferencia Bancaria</option>
+                </select>
+
+                <div class="input-field-1">
+                    <h3>Nombre en la tarjeta</h3>
+                    <input type="text">
+                </div>
+
+                <div class="input-field-1">
+                    <h3>Número de tarjeta</h3>
+                    <input type="text">
+                </div>
+
+                <div class="input-field-2">
+                    <div class="input-de-2">
+                        <h3>Fecha de expiración</h3>
+                        <input type="text" placeholder="07/26">
+                    </div>
+                    <div class="input-de-2">
+                        <h3>CVC</h3>
+                        <input type="password">
+                    </div>
+                </div>
+
+                <div class="input-field-1 btn-center">
+                    <button type="submit" class="btn-submit">Completar Compra</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <footer>
+            <div class="c-footer">
+                <hr>
+                <div>
+                    <a href="#">
+                        <img class="icons" src="icons8-instagram-24.png" alt="Instagram">
+                    </a>
+                    <a href="#">
+                        <img class="icons" src="icons8-twitter-24.png" alt="Twitter">
+                    </a>
+                    <a href="#">
+                        <img class="icons" src="icons8-facebook-24.png" alt="Facebook">
+                    </a>
+                </div>
+                <p>
+                    © 2025 Todos los derechos reservados.
+                    <br>
+                    <a href="#">
+                        Políticas de privacidad
+                    </a>
+                    <a href="#">
+                        - Política de Copyright
+                    </a>
+                    <br>
+                </p>
+            </div>
+        </footer>
+
+    <script src="Home.js"></script>
+</body>
+
+</html>

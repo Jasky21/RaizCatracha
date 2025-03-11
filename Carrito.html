@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="Carrito.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="hamburguesa-menu">
+            <div class="hamburguesa-icon">&#9776;</div>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo-img" src="Logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="nav-header">
+            <div class="item">
+                <section class="btn-buscar">
+                    <form autocomplete="off">
+                        <div>
+                            <input type="text" placeholder="Buscar">
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div>
+                <a href="Login.html"><img class="icons-header" src="User.png" alt="User"></a>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="menu-lateral">
+        <ul>
+            <li class="categoria">
+                <a>Aceites esenciales</a>
+            </li>
+            <li class="categoria">
+                <a>Hierbas</a>
+            </li>
+            <li class="categoria">
+                <a>Infusiones</a>
+            </li>
+            <li class="categoria">
+                <a>Jarabes</a>
+            </li>
+            <li class="categoria">
+                <a>Recetas</a>
+            </li>
+            <li class="categoria">
+                <a>Suplementos</a>
+            </li>
+        </ul>
+        <div class="enlaces-footer">
+            <a href="#">Contacto</a>
+            <a href="#">Sobre Nosotros</a>
+        </div>
+    </aside>
+
+    <main class="carrito">
+        <h1>Carrito de Compras</h1>
+        <br>
+        <table class="tabla-carrito">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Imagen</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Aromaforce jarabe respiración facil Bio 150ml</td>
+                    <td><img class="img-carrito" src="A1.jpg"></td>
+                    <td>L.250</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>L.250</td>
+                    <td><button class="btn-eliminar">Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="resumen-carrito">
+            <p>Subtotal: L.250</p>
+            <p>Impuestos:L.00</p>
+            <p>Descuento: L.00</p>
+            <p>Total:L.250</p>
+            <a href="Pago.html">
+                <button class="btn-comprar">Proceder al Pago</button>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <footer>
+            <div class="c-footer">
+                <hr>
+                <div>
+                    <a href="#">
+                        <img class="icons" src="icons8-instagram-24.png" alt="Instagram">
+                    </a>
+                    <a href="#">
+                        <img class="icons" src="icons8-twitter-24.png" alt="Twitter">
+                    </a>
+                    <a href="#">
+                        <img class="icons" src="icons8-facebook-24.png" alt="Facebook">
+                    </a>
+                </div>
+                <p>
+                    © 2025 Todos los derechos reservados.
+                    <br>
+                    <a href="#">
+                        Políticas de privacidad
+                    </a>
+                    <a href="#">
+                        - Política de Copyright
+                    </a>
+                    <br>
+                </p>
+            </div>
+        </footer>
+
+    <script src="Home.js"></script>
+
+</body>
+
+</html>

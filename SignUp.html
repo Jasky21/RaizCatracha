@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="SignUp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="box">
+            <form method="post" id="suForm" name="suForm" action="Login.html">
+                <h1>Regístrate</h1>
+                <div class="row">
+                    <div class="inputboxr">
+                        <input type="text" id="suNombre" name="suNombre" required>
+                        <label>Nombre</label>
+                        <p id="alertNombre"></p>
+                    </div>
+
+                    <div class="inputboxr">
+                        <i class="fa-solid fa-signature"></i>
+                        <input type="text" id="suApellido" name="suApellido" required>
+                        <label>Apellido</label>
+                        <p id="alertApellido"></p>
+                    </div>
+                </div>
+
+                <div class="inputbox">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" id="suEmail" name="suEmail" required>
+                    <label>Email</label>
+                    <p id="alertEmail"></p>
+                </div>
+
+                <div class="row">
+                    <div class="inputboxr">
+                        <input type="password" id="suPassword" name="suPassword" required>
+                        <label>Password</label>
+                        <p id="alertPassword"></p>
+                    </div>
+
+                    <div class="inputboxr">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="suPassword2" name="suPassword2" required>
+                        <label>Confirmar Password</label>
+                        <p id="alertPassword2"></p>
+                    </div>
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="SignUp" onclick="evaluar(event);">
+                </div>
+                <a href="Login.html">Login</a>
+            </form>
+        </div>
+    </main>
+</body>
+<script src="https://kit.fontawesome.com/f13ab8e1b7.js" crossorigin="anonymous"></script>
+<script src="ValidarSignUp.js"></script>
+
+</html>
